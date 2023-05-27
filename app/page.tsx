@@ -27,7 +27,7 @@ export default async function Home() {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        <a
+        {/* <a
           href="https://twitter.com/steventey/status/1613928948915920896"
           target="_blank"
           rel="noreferrer"
@@ -37,23 +37,23 @@ export default async function Home() {
           <p className="text-sm font-semibold text-[#1d9bf0]">
             Introducing Precedent
           </p>
-        </a>
+        </a> */}
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          <Balancer>Building blocks for your Next project</Balancer>
+          <Balancer>Inspira, conecta, transforma</Balancer>
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           <Balancer>
-            An opinionated collection of components, hooks, and utilities for
-            your Next.js project.
+            Transformando vidas sin límites. Como fundación sin ánimo de lucro,
+            nos enfocamos en empoderar a la juventud.
           </Balancer>
         </p>
-        <div
+        {/* <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
@@ -91,9 +91,9 @@ export default async function Home() {
               <span className="font-semibold">{nFormatter(stars)}</span>
             </p>
           </a>
-        </div>
+        </div> */}
       </div>
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+      {/* <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo, large }) => (
           <Card
             key={title}
@@ -109,7 +109,7 @@ export default async function Home() {
             large={large}
           />
         ))}
-      </div>
+      </div> */}
     </>
   );
 }
