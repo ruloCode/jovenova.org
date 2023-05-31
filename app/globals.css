@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap");
+
+.primaryColor {
+  background-color: #9900ff;
+}
+
+.actionColor {
+  color: #008137;
+}
+
+.primaryFont {
+  font-family: "Roboto", sans-serif;
+}
+
+.secondaryFont {
+  font-family: "Montserrat", sans-serif;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.modal {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fullButton {
+  width: 100%;
+}
+
+.donateModal {
+  color: #9900ff;
+}
+
+.typing {
+  color: #ff7800;
+  border: none;
+  outline: none;
+}
