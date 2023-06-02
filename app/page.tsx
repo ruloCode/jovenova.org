@@ -28,20 +28,20 @@ export default function Home() {
   return (
     <div className="z-10 w-full max-w-xl px-5 xl:px-0">
       <h1
-        className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-3xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-5xl md:leading-[5rem]"
+        className="secondaryFont animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-3xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-5xl md:leading-[5rem]"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
         <Balancer>Transformando vidas</Balancer>
         <Balancer>Juntxs por&nbsp; </Balancer>
-        <ReactTypingEffect
-          speed={100}
-          eraseDelay={1000}
-          eraseSpeed={0}
-          typingDelay={2500}
-          className="typing"
-          text={[" La Educación", " La Cultura", " El arte"]}
-        />
       </h1>
+      <ReactTypingEffect
+        speed={50} // Ajusta la velocidad de escritura a un valor más lento, por ejemplo, 50
+        eraseDelay={1000} // Aumenta el retraso antes de borrar el texto a 1000 (1 segundo)
+        eraseSpeed={50} // Ajusta la velocidad de borrado a un valor más lento, por ejemplo, 50
+        typingDelay={2000} // Aumenta el retraso antes de empezar a escribir el siguiente texto a 2000 (2 segundos)
+        className="typing"
+        text={[" La Educación", " La Cultura", " El arte"]}
+      />
       <p
         className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
         style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
@@ -55,13 +55,13 @@ export default function Home() {
       <div className="buttonContainer">
         <button
           onClick={openModal2}
-          className="secondaryColor rounded border border-indigo-600 px-4 py-2 text-indigo-600"
+          className="secondaryColor secondaryButton rounded border border-indigo-600 px-4 py-2 text-indigo-600 "
         >
           Donar
         </button>
         <button
           onClick={openModal}
-          className="primaryColor rounded bg-indigo-600 px-4 py-2 text-white"
+          className="primaryColor primaryButton rounded bg-indigo-600 px-4 py-2 text-white"
         >
           Ayudar
         </button>

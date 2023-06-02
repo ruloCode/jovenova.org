@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap');
 
+
+body {
+  font-family: "Roboto", sans-serif;
+}
 .primaryColor {
   background-color: #9900ff;
 }
@@ -46,4 +50,33 @@
   color: #ff7800;
   border: none;
   outline: none;
+
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.primaryButton {
+  border-radius: 1rem;
+
+}
+
+.secondaryButton {
+  border-radius: 1rem;
+}
+
+
+.activeScroll {
+  border-bottom: 1px ;
+  box-shadow: 0 1px 2px #ff7700b5;
+
+}
+
+.navbar {
+  background-color: #FF7900;
+  color: #fff;
+  text-transform: uppercase;
 }
